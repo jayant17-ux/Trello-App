@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="dashboard-nav">
+        <h1 style="color: white; font-size: 1.2rem;">Trello</h1>
+        <button class="nav-btn-logout">Logout</button>
+    </nav>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h3>YOUR ORGANIZATIONS</h3>
+            <ul id="org-list">
+                <li class="active-org">Fetching Orgs...</li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <header class="content-header">
+                <h2 id="current-org-name">Board Dashboard</h2>
+                <button class="btn-create-board">+ Create New Board</button>
+            </header>
+
+            <div id="board-grid" class="grid-layout">
+                <p>Select an organization to view boards.</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal-container"></div>
+
+    <script src="org.js"></script>
+</body>
+</body>
+</html>
